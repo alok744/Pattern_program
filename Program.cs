@@ -4,24 +4,35 @@
     {
         static void Main(String[] args)
         {
-           
             for (int i = 1; i <= 5; i++)
             {
-                for (int j = 1; j <= i; j++)
+                for (int j = i; j <= 5; j++)
                 {
-                    Console.Write("*");
+                    
+                    Console.Write(" ");
                 }
-                Console.WriteLine();
-            }
-            for (int i = 1; i <= 4; i++)
-            {
-                for (int j = i; j <= 4; j++)
+                for (int k = 1; k <= i; k++)
                 {
-                    Console.Write("*");
-                }
-                Console.WriteLine();
-            }
+                    if (k == 1)
+                    {
+                        Console.Write("*");
+                    }
 
+                }
+                for (int j = 2; j <= i; j++)
+                {
+                    Console.Write("  ");
+                }
+                for (int k = 1; k <= i; k++)
+                {
+                    if (k == 1)
+                    {
+                        Console.Write("*");
+                    }
+
+                }
+                Console.WriteLine();
+            }
             Console.ReadLine();
         }
 
