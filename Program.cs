@@ -1,15 +1,14 @@
-﻿using System.Globalization;
-namespace pattern_project
+﻿namespace pattern_project
 {
     class program
     {
-        static void Main(String[] args) 
-        {          
-            for (int i = 1; i <= 5; i++)
+        static void Main(String[] args)
+        {
+            for (int i = 1; i <= 7; i++)
             {
-                for (int j = 1; j <= 5; j++)
+                for (int j =1; j <=i; j++)
                 {
-                    Console.Write("*");
+                    Console.Write("&");
                 }
                 Console.WriteLine();
             }
@@ -17,4 +16,21 @@ namespace pattern_project
         }
 
     }
+    //second patter
+    //class program
+    //{
+    //    static void Main(String[] args)
+    //    {
+    //        for (int i = 1; i <= 7; i++)
+    //        {
+    //            for (int j = i; j <= 7; j++)
+    //            {
+    //                Console.Write("");
+    //            }
+    //            Console.WriteLine();
+    //        }
+    //        Console.ReadLine();
+    //    }
+
+    //}
 }
