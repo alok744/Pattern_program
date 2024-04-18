@@ -4,11 +4,15 @@
     {
         static void Main(String[] args)
         {
-            for (int i = 1; i <= 7; i++)
+            for (int i = 1; i <= 5; i++)
             {
-                for (int j =1; j <=i; j++)
+                for (int j = i; j <= 5; j++)
                 {
-                    Console.Write("&");
+                    Console.Write(" ");
+                }
+                for(int k=1; k <= i;k++)
+                {
+                    Console.Write("*");
                 }
                 Console.WriteLine();
             }
@@ -16,21 +20,4 @@
         }
 
     }
-    //second patter
-    //class program
-    //{
-    //    static void Main(String[] args)
-    //    {
-    //        for (int i = 1; i <= 7; i++)
-    //        {
-    //            for (int j = i; j <= 7; j++)
-    //            {
-    //                Console.Write("");
-    //            }
-    //            Console.WriteLine();
-    //        }
-    //        Console.ReadLine();
-    //    }
-
-    //}
 }
