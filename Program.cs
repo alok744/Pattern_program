@@ -1,35 +1,15 @@
-﻿namespace pattern_project
+﻿using System.Globalization;
+namespace pattern_project
 {
     class program
     {
-        static void Main(String[] args)
-        {
+        static void Main(String[] args) 
+        {          
             for (int i = 1; i <= 5; i++)
             {
-                for (int j = i; j <= 5; j++)
+                for (int j = 1; j <= 5; j++)
                 {
-                    
-                    Console.Write(" ");
-                }
-                for (int k = 1; k <= i; k++)
-                {
-                    if (k == 1)
-                    {
-                        Console.Write("*");
-                    }
-
-                }
-                for (int j = 2; j <= i; j++)
-                {
-                    Console.Write("  ");
-                }
-                for (int k = 1; k <= i; k++)
-                {
-                    if (k == 1)
-                    {
-                        Console.Write("*");
-                    }
-
+                    Console.Write("*");
                 }
                 Console.WriteLine();
             }
